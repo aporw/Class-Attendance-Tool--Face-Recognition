@@ -1,0 +1,46 @@
+
+Once arguments are read, a graph object(class FaceRecGraph, file tf_graph) is created and passed to MTCNNDetect class to call its constructor. This creates MTCNNDetect class object face_detect. This face_detect object will be used by core functions later to call detect_face function. 
+
+core functions: These use face_detect and extract_feature objects. extract_feature object depends upon type of model. 
+1. camera_recog
+2. create_manual_data
+3. getNames
+4. readNames
+
+camera_recog and getNames uses 4 objects to perform task in order:
+1. call detect_face function with face_detect obejct from MTCNNDetect class (mtcnn_detect.py file)
+2. call align function with aligner object from AlignCustom class (align_custom.py file)
+3. call get_features function with extract_feature object from FaceFeature class (face_model.py file)
+4. call findPeople function (find_people.py file)
+
+create_manual_data and readNames uses 4 objects to perform task in order:
+1. call detect_face function with face_detect obejct from MTCNNDetect class (mtcnn_detect.py file)
+2. call align function with aligner object from AlignCustom class (align_custom.py file)
+3. call get_features function with extract_feature object from FaceFeature class (face_model.py file)
+4. Writes featurs in json format in txt file
+
+
+Example VGG
+
+mode - VGGcamera
+1. Create object for FaceFeature class to get generate features with next function
+2. Identify person calling camera_recog function with findPeople which shows person's name on the face and quits on pressing q
+
+mode - VGGinput
+1. Create object for FaceFeature class to get generate features with next function
+2. Write data in VGG txt file calling create_manual_data
+
+
+mode - VGGpicture
+1. Create object for FaceFeature class to get generate features with next function
+2. Identify person calling getNames function with findPeople which shows person's name on the face
+and quits on any key
+
+
+mode - VGGpic_input_one
+1. Create object for FaceFeature class to get generate features with next function
+2. For a given path, takes all images of that person, calls readNames to write vectors in VGG_pic txt file
+
+mode- VGGpic_input_all
+1. Create object for FaceFeature class to get generate features with next function
+2. For a given path with subfolders as each person's images, calls readNames to write vectors for each person in VGG_pic txt file
