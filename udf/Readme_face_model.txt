@@ -1,0 +1,1 @@
+Takes FRGGraph object ( generated from tf_graph) and a given model to generating embeddings (vectors) for given face. 
