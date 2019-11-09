@@ -107,7 +107,7 @@ deformed images.
 
 Architecture:
 
-![alt text] (https://github.com/aporw/Class-Attendance-Tool--Face-Recognition/blob/master/Arch.PNG)
+![Alt text] (relative/path/to/Arch.png?raw=true "Title")
 
 
 # Building Blocks:
