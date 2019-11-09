@@ -2,7 +2,7 @@
 Built the tool to automate the process of class attendance. The tool successfully worked in camera mode for class of 30 and in image mode for class of 10.  
 
 # Building Class Attendance Tool with Face Recognition of students
-Jingxi Li, Ankur Porwal
+Ankur Porwal, Jingxi Li
 
 # Objective:
 Taking attendance of students can take around 5-10 minutes daily of the class. Therefore, automating
