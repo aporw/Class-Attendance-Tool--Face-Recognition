@@ -107,7 +107,7 @@ deformed images.
 
 Architecture:
 
-![Alt text] (relative/path/to/Arch.png?raw=true "Title")
+![Alt text](relative/path/to/Arch.png?raw=true "Title")
 
 
 # Building Blocks:
