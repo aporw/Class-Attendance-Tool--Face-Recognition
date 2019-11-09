@@ -107,7 +107,7 @@ deformed images.
 
 Architecture:
 
-![What is this](Arch.png)
+![What is this](Arch.PNG)
 
 
 # Building Blocks:
