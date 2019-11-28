@@ -112,7 +112,7 @@ Architecture:
 
 # Building Blocks:
 
-1. MTCNN
+# 1. MTCNN
 Multi-task Cascaded Convolutional Networks (MTCNN) is used for face detection and alignment in the
 project. MTCNN applies a cascaded structure of deep convolutional networks with three stages and is
 able to achieve both face detection and alignment with multi-task learning where stochastic gradient
